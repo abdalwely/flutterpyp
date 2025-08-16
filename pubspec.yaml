@@ -1,0 +1,178 @@
+name: paypoint
+description: تطبيق PayPoint احترافي متعدد الخدمات للدفع الإلكتروني والشحن في اليمن
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Firebase
+  firebase_core:
+  firebase_auth:
+  cloud_firestore:
+  firebase_messaging:
+  firebase_storage:
+  firebase_analytics:
+  firebase_crashlytics:
+  firebase_performance:
+  
+  # State Management
+  flutter_riverpod:
+  
+  # UI Components and Animation
+  cupertino_icons:
+  flutter_svg:
+  cached_network_image:
+  lottie:
+  shimmer:
+  flutter_staggered_animations:
+  animations:
+  
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+  intl:
+  
+  # Storage and Preferences
+  shared_preferences:
+  hive:
+  hive_flutter:
+  path_provider:
+  
+  # Networking and API
+  http:
+  dio:
+  connectivity_plus:
+  internet_connection_checker:
+  
+  # Utilities
+  url_launcher:
+  image_picker:
+  permission_handler:
+  device_info_plus:
+  package_info_plus:
+  
+  # Local Notifications and Messaging
+  flutter_local_notifications:
+  awesome_notifications:
+  
+  # Security and Encryption
+  crypto:
+  encrypt:
+  
+  # Biometric Authentication
+  local_auth:
+  
+  # QR Code and Barcode
+
+  
+  # Date and Time
+  jiffy:
+  
+  # Math and Calculations
+  decimal:
+  
+  # Formatting
+  mask_text_input_formatter:
+  
+  # Charts and Analytics (for admin panel)
+  fl_chart:
+  syncfusion_flutter_charts:
+  
+  # File handling
+  file_picker:
+  csv:
+  pdf:
+  printing:
+  
+  # Background tasks
+  workmanager:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints:
+  hive_generator:
+  build_runner:
+  json_annotation:
+  json_serializable:
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - assets/logos/
+    - assets/illustrations/
+    - assets/sounds/
+    - assets/fonts/
+  
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Cairo-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Cairo-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Cairo-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Cairo-Black.ttf
+          weight: 900
+    
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/Tajawal-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Tajawal-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Tajawal-Bold.ttf
+          weight: 700
+    
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+
+flutter_flavors:
+  development:
+    app:
+      name: "PayPoint Dev"
+      applicationId: "com.paypoint.dev"
+    android:
+      applicationId: "com.paypoint.dev"
+    ios:
+      applicationId: "com.paypoint.dev"
+  
+  staging:
+    app:
+      name: "PayPoint Staging"
+      applicationId: "com.paypoint.staging"
+    android:
+      applicationId: "com.paypoint.staging"
+    ios:
+      applicationId: "com.paypoint.staging"
+  
+  production:
+    app:
+      name: "PayPoint"
+      applicationId: "com.paypoint.ye"
+    android:
+      applicationId: "com.paypoint.ye"
+    ios:
+      applicationId: "com.paypoint.ye"

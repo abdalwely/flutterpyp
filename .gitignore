@@ -1,0 +1,18 @@
+# Ignore everything
+*
+
+# Keep only these:
+!.gitignore
+!pubspec.yaml
+!pubspec.lock
+!lib/**
+!server.js
+# Ignore project-specific generated folders
+android/
+ios/
+build/
+assets/
+.dart_tool/
+.idea/
+.vscode/
+web/
